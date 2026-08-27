@@ -1,0 +1,11 @@
+export { AdvocacyIcon } from "./Advocacy";
+export { CustomersIcon } from "./Customers";
+export { DashboardIcon } from "./Dashboard";
+export { OrdersIcon } from "./Orders";
+export { OrdersIconWhite } from "./OrdersWhite";
+export { ProductsIcon } from "./Products";
+export { ReportsIcon } from "./Reports";
+export { OrganizationsIcon } from "./Organizations";
+export { BrandsIcon } from "./Brands";
+export { ResetPassIcon } from "./ResetPassIcon";
+export { LogoutIcon } from "./Logout";

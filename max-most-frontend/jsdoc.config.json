@@ -1,0 +1,32 @@
+{
+  "source": {
+    "include": ["src"],
+    "includePattern": ".+\\.(ts|tsx)?$",
+    "excludePattern": ".+\\.(test|spec).ts"
+  },
+  "plugins": ["plugins/markdown", "node_modules/jsdoc-babel"],
+  "babel": {
+    "extensions": ["js", "es6", "jsx", "ts", "tsx"],
+    "ignore": ["**/*.(test|spec).ts"],
+    "babelrc": false,
+    "presets": [
+      ["@babel/preset-env", { "targets": { "node": true } }],
+      "@babel/preset-typescript"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "opts": {
+    "template": "node_modules/better-docs",
+    "destination": "./jsDocs",
+    "recurse": true,
+    "verbose": true
+  },
+  "templates": {
+    "better-docs": {
+      "name": "Refine Pharma Documentation"
+    }
+  }
+}

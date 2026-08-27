@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta
+      name="viewport"
+      content="minimum-scale=1, initial-scale=1, width=device-width"
+    />
+    <!-- <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script> -->
+
+    <title>MOST</title>
+    <style>
+      /* Modal styles */
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+      }
+
+      .modal-content {
+        background-color: white;
+        margin: auto;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+      }
+
+      /* Close button style */
+      .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="pdf-viewer"></div>
+    <!-- <script>
+      // Get the PDF data from the URL query parameter
+      const pdfData = decodeURIComponent(window.location.search.substr(1));
+
+      // Initialize PDF.js viewer
+      const pdfViewer = document.getElementById("pdf-viewer");
+      const loadingTask = pdfjsLib.getDocument({ data: pdfData });
+      loadingTask.promise.then(pdfDocument => {
+        const pdfViewer = new pdfjsViewer.PDFViewer({
+          container: pdfViewer
+        });
+        pdfViewer.setDocument(pdfDocument);
+      });
+    </script> -->
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- <script>
+      const script = document.createElement("script");
+      script.src = "JSPrintManager.js";
+      script.src =
+        "https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js";
+      script.src = "https://code.jquery.com/jquery-3.2.1.slim.min.js";
+      script.async = true;
+      document.body.appendChild(script);
+    </script> -->
+  </body>
+</html>

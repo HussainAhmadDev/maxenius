@@ -1,0 +1,38 @@
+name: Build App
+
+on:
+  push:
+    branches:
+      - main # Change this to your default branch
+      - stage
+      - dev
+  pull_request:
+    branches:
+      - main # Change this to your default branch
+      - stage
+      - dev
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18 # You can change this to the desired Node.js version
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build app
+        run: npm run build # Adjust this to your build script
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: dist # Update this path if your build output directory is different

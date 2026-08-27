@@ -1,0 +1,42 @@
+{
+  "env": { "browser": true, "es2020": true, "node": true },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@tanstack/eslint-plugin-query/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "ignorePatterns": ["dist", ".eslintrc.cjs"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "react",
+    "react-refresh",
+    "prettier",
+    "@typescript-eslint",
+    "@tanstack/query"
+  ],
+  "rules": {
+    "react-refresh/only-export-components": ["warn", { "allowConstantExport": true }],
+    "prettier/prettier": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+
+    // React-query
+    "@tanstack/query/exhaustive-deps": "error",
+    "@tanstack/query/prefer-query-object-syntax": "off",
+    "@tanstack/query/stable-query-client": "error"
+  }
+}

@@ -1,0 +1,47 @@
+.react-international-phone-input-container .react-international-phone-input {
+  background: transparent;
+  overflow: visible;
+  height: var(--react-international-phone-height, 36px);
+  box-sizing: border-box;
+  padding: 0 8px;
+  border: 0px solid var(--react-international-phone-border-color, gainsboro);
+  border: 'none';
+  border-radius: var(--react-international-phone-border-radius, 4px);
+  margin: 0;
+  /* background-color: var(--react-international-phone-background-color, white); */
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  color: var(--react-international-phone-text-color, #fff);
+  font-family: inherit;
+  font-size: var(--react-international-phone-font-size, 16px);
+}
+
+.react-international-phone-input-container
+  .react-international-phone-country-selector-button {
+  border-radius: var(--react-international-phone-border-radius, 4px);
+  margin-right: -1px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  background-color: transparent !important;
+}
+
+.react-international-phone-country-selector-button {
+  display: flex;
+  height: var(--react-international-phone-height, 36px);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0px solid
+    var(
+      --react-international-phone-country-selector-border-color,
+      var(--react-international-phone-border-color, gainsboro)
+    );
+  margin: 0;
+  appearance: button;
+  -webkit-appearance: button;
+  /* background-color: var(--react-international-phone-country-selector-background-color, var(--react-international-phone-background-color, white)); */
+  cursor: pointer;
+  text-transform: none;
+  user-select: none;
+}

@@ -1,0 +1,28 @@
+export const defaultJSON = {
+  appType: 'kantmanufaktur',
+  closed: true,
+  tool: 0,
+  points: [
+    { x: 780, y: 427 },
+    { x: 1200, y: 400 },
+    { x: 1180, y: 520 },
+    { x: 809, y: 572 },
+  ],
+  addLines: [],
+  profiles: [],
+  default: {
+    oh: 0.2,
+    ih: 0.1,
+    ww: 0.25,
+    iw: 0.025,
+    ow: 0.05,
+    ul: 0.25,
+    col: 'rgb(128,128,128)',
+    pt: 0,
+    st: 3,
+    al: 2,
+    grid: 0.02,
+    ha: 1000,
+  },
+  pdf: [],
+};

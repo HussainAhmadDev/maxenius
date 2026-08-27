@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "types": ["vite/client", "jest", "@testing-library/cypress"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react",
+    "baseUrl": "src"
+  },
+  "include": [
+    "src",
+    "./qz-tray.d.ts" // Add this line to include the typings folder
+  ],
+  "exclude": ["node_modules", "/**/*.spec.ts", "src/**/*.test.ts", "src/**/*.test.tsx"]
+}

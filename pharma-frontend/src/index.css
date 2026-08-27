@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  margin: 0;
+  /* font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+
+/* p,
+div,
+span {
+  font-family: Poppins, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+} */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+hr {
+  height: 2px;
+  background-color: #e6ebee;
+  border: none;
+}
+.csacee {
+  min-width: 12% !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 5px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.521);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+/* for user Menu in Sidebar */
+.MuiPaper-elevation10 {
+  opacity: 1;
+  transform: none;
+  width: 241px !important;
+  position: relative !important;
+  transition: opacity 289ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
+    transform 192ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  left: 8px !important;
+  transform-origin: 176px 227px;
+  height: fit-content !important;
+  margin-bottom: 30px !important;
+}
+
+/* overriding table cell CSS */
+.rdt_TableCell > div {
+  white-space: normal !important;
+}
+/* ovveriding disabled textInput field */
+.MuiInputBase-root.Mui-disabled {
+  background-color: #f2f2f2 !important;
+  color: #808080 !important;
+}
+/* overriding datepicker selected year background */
+.css-hc7ms0.Mui-selected {
+  color: #fff;
+  background-color: #ff173d !important;
+}
+
+/* overriding datepicker backgroundColor */
+.MuiPickersDay-root:hover {
+  background-color: #ff173d !important;
+}
+/* overriding border on focus in DatePicker */
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused
+  .MuiOutlinedInput-notchedOutline {
+  border: 2px solid #ff173d !important;
+}
+.css-195y93z-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: #ff173d !important;
+}
+/* overriding selected date color in datepicker */
+.css-bkrceb-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+  background-color: #ff173d !important;
+}
+.MuiTabs-indicator {
+  background-color: #ff173d !important;
+}
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: black !important;
+  font-weight: bold;
+  background-color: #f9fafb;
+}
+.greenFilterIcon {
+  filter: invert(22%) sepia(97%) saturate(4026%) hue-rotate(105deg) brightness(95%)
+    contrast(103%) !important;
+}
+.css-uob957-MuiListSubheader-root {
+  color: rgba(0, 0, 0, 0.87) !important;
+  font-family: Poppins !important;
+  font-weight: 500 !important;
+}
+
+.css-10hburv-MuiTypography-root {
+  font-size: 14px !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"] {
+  /*for absolutely positioning spinners*/
+  position: relative;
+  padding: 5px;
+  height: 28px;
+  padding-right: 25px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: inner-spin-button !important;
+  width: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
